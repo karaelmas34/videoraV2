@@ -17,4 +17,4 @@ foreach ($banners as $banner) {
   echo "</div>";
 }
 ?>
-</div
+</div>
