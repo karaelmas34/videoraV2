@@ -7,6 +7,9 @@
 //}
 
 session_start();
+if (isset($_GET['logout'])) {
+  unset($_SESSION['admin']);
+}
 if ($_POST) {
   $user = $_POST['user'] ?? '';
   $pass = $_POST['pass'] ?? '';
