@@ -1,0 +1,74 @@
+:root {
+  --bg-light: #f4f4f4;
+  --bg-dark: #181818;
+  --text-light: #222;
+  --text-dark: #f2f2f2;
+  --primary: #d62246;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  transition: background 0.3s, color 0.3s;
+}
+
+.light {
+  background: var(--bg-light);
+  color: var(--text-light);
+}
+
+.dark {
+  background: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+.container {
+  max-width: 500px;
+  margin: 80px auto;
+  text-align: center;
+  padding: 20px;
+}
+
+input[type="text"], select {
+  width: 90%;
+  padding: 12px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 12px 24px;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #a51332;
+}
+
+.theme-toggle {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  z-index: 10;
+}
+
+.theme-toggle input {
+  display: none;
+}
+
+.icons {
+  display: flex;
+  gap: 10px;
+}
+
+.sun, .moon {
+  width: 28px;
+  cursor: pointer;
+}
